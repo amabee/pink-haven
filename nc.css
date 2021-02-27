@@ -1,0 +1,130 @@
+/* VIDEO BACKGROUND */
+
+html,body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.BGvid {  
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #BGvid {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #BGvid { 
+        width:auto;
+        height: 100%;
+	
+    }
+}
+@media (max-width: 767px) {
+    #BGvid {
+        display: none;
+    }
+    body {
+        background: url('thumb.jpg');
+        background-size: cover;
+    }
+}
+
+/* LOGIN/SIGNUP FORM */
+
+.main-wrapper
+{	
+	width: 400px;
+	height: 400px;
+	background: rgba(255,255,255,0.20);
+	border-radius: 5px;
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.login-area
+{
+	padding: 90px 60px;
+}
+
+.main-wrapper .btn-area
+{
+	height: 40px;
+	width: 100%;
+	background-color: #8bbfe9;
+	border-radius: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	margin-top: 11px;
+	cursor: pointer;
+	line-height: 40px;
+	
+}
+
+.main-wrapper .btn-area_Signup
+{
+	height: 40px;
+	width: 100%;
+	background-color: #8bbfe9;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	margin: 5px;
+	margin-top: 11px;
+	cursor: pointer;
+	line-height: 40px;
+	
+}
+#login , #signup
+{
+	text-decoration: none;
+	color: black;
+	
+}
+
+.btn-area:hover , .btn-area_Signup:hover
+{
+	color:#00A0C6;
+}
+
+.main-wrapper input
+{
+	border-radius: 50px;
+	font-size:15px;
+	-webkit-flex:15px;
+	-ms-flex: 15px;
+	-moz-flex: 15px;
+	-o-flex: 15px;
+	flex: 15px;
+	height: 45px;
+	border: none;
+	padding-left: 15px;
+	width: calc(100% - 15px);
+	margin-bottom: 10px;
+	background: rgba(0,0,0,0.10);
+	color: black;
+}
+
+.main-wrapper .need-help_area
+{
+	margin-top: 30px;
+}
+
+.need-help_area a
+{
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+a:hover
+{
+    color:#00A0C6;
+}
